@@ -6,15 +6,18 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<jsp:useBean id="calculator" class="pl.sda.jsp.utils.Calculator"
 <html>
 <head>
     <title>Hello World</title>
 </head>
 <body>
-<p>Dzisiaj jest <%=java.time.LocalDate.now().toString()%></p>
+<p>
+    5<sup>2</sup> wynosi:
+    <% final int calculator.square(5);
+    out.print (square)
+    /%>
 
-<jsp:forward page="redirected.jsp">
-    <jsp:param name="myParam" value="my parameter"/>
-</jsp:forward>
+</p>
 </body>
 </html>
