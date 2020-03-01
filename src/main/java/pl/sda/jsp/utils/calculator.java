@@ -7,8 +7,8 @@ public class calculator {
     @Setter
     private int a;
 
-    public int square ()
-        private int n;
+    public int square (){
+        int n;
     }
-    public
+
 }
