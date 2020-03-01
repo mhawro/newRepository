@@ -14,6 +14,7 @@
 <body>
 <p>
     5<sup>2</sup> wynosi:
+    <% calculator.setN(5)%>
     <% final int calculator.square(5);
     out.print (square)
     /%>
