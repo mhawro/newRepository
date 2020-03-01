@@ -6,19 +6,24 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<jsp:useBean id="calculator" class="pl.sda.jsp.utils.Calculator"
 <html>
 <head>
     <title>Hello World</title>
 </head>
 <body>
-<p>
-    5<sup>2</sup> wynosi:
-    <% calculator.setN(5)%>
-    <% final int calculator.square(5);
-    out.print (square)
-    /%>
+<form action="search.jsp">
+    <label>Szukane słowo: <input type="text" name="query"/></label>
+    <label>Strona nr: <input type="text" name="page"/></label>
+    <label>Sortowanie:
+    <select name="sort">
+        <option value="asc">rosnąco</option>
+        <option value="desc">malejąco</option>
+    </select>
+    </label>
+    <input type="submit" value="wyślij">
+</form>
 
-</p>
+<a href="search.jsp?query=blablabla&page=35&sort=asc">link</a>
+
 </body>
 </html>

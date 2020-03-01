@@ -1,13 +1,12 @@
 package pl.sda.jsp.utils;
 
-import jdk.nashorn.internal.objects.annotations.Setter;
+import lombok.Setter;
 
 public class calculator {
 
-    @Setter
+@Setter
     private int a;
-
-    public int square (){
+    public void square (){
         int n;
     }
 

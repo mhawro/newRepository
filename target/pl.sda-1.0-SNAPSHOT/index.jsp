@@ -11,8 +11,16 @@
     <title>Hello World</title>
 </head>
 <body>
-<p>Dzisiaj jest <%=java.time.LocalDate.now().toString()%></p>
-
-<jsp:forward page="redirected.jsp"/>
+<form action="search.jsp">
+    <label>Szukane słowo: <input type="text" name="query"/></label>
+    <label>Strona nr: <input type="text" name="page"/></label>
+    <label>Sortowanie:
+    <select name="sort">
+        <option value="asc">rosnąco</option>
+        <option value="desc">malejąco</option>
+    </select>
+    </label>
+    <input type="submit" value="wyślij">
+</form>
 </body>
 </html>
