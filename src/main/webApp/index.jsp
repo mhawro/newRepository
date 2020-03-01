@@ -13,5 +13,8 @@
 <body>
 <p>Dzisiaj jest <%=java.time.LocalDate.now().toString()%></p>
 
+<jsp:forward page="redirected.jsp">
+    <jsp:param name="myParam" value="my parameter"/>
+</jsp:forward>
 </body>
 </html>
